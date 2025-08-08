@@ -1,0 +1,3 @@
+from .triplet_loss import TripletLoss
+from .triplet_center_loss import TripletCenterLoss
+from .triplet_center_softmax_loss import TripletCenterSoftmaxLoss

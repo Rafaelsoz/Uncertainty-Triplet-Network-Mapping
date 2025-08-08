@@ -1,0 +1,29 @@
+env:
+  seed: 0
+  device: 'cuda'
+  output_dir: 'src'
+data:
+  name: 'breast_cancer'
+  num_classes: 2
+  val_size: 0.1
+resnet18:
+  model_name: 'ResNet18'
+  epochs: 5
+  mcdo_epochs: 20
+  batch_size: 128
+  mcdo_batch_size: 128
+  lr: 0.0001
+  mcdo_lr: 0.0001
+utmap:
+  model_name: 'UTMap_TCL'
+  loss: 'tripletcenterloss'
+  use_feature_map: True
+  alpha: 0.01
+  method: 'unique'
+  feature_dim: 2
+  epochs: 20
+  batch_size: 16
+  margin: 5.0
+  lr: 0.00005
+  weight_decay: 0.00001
+  center_lr: 0.001
